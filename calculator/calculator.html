@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link type="text/css" rel="stylesheet" href="calc.css">
+  </head>
+  <body id="backcolor" class="white">
+    <div class="header">
+      <h1>Calculator</h1>
+      <div class="colorchanger">
+        <select id="select" class="" onchange="backgroundColor()">
+          <option value="0">Select Theme:</option>
+          <option class="black" value="1">Black</option>
+          <option class="red" value="2">Red</option>
+          <option class="orange" value="3">Orange</option>
+          <option class="gray" value="4">Gray</option>
+          <option class="green" value="5">Green</option>
+        </select>
+      </div>
+    </div>
+  <div class="container">
+    <div class="numbers">
+    <div class="fn">
+      <p>Enter first number: </p>
+        <input id="first-number" type="number">
+    </div>
+    <div class="sn">
+      <p>Enter second number: </p>
+      <input id="second-number" type="number">
+    </div>
+    </div>
+    <div class="button operand">
+      <button id="btnsum" class="btn"> + </button>
+      <button id="btnsubtract" class="btn"> - </button>
+      <button id="btnmultiply" class="btn"> x </button>
+      <button id="btndivide" class="btn"> / </button>
+    </div>
+    <div class="button">
+      <button id="btnequal" class="btn"> = </button>
+    </div>
+    <div class="result">
+      <h1>Total is: <p id="total"></p></h1>
+      <button id="clear">Clear</button>
+    </div>
+
+  </div>
+
+
+  </body>
+  <script src="calc.js"></script>
+</html>
